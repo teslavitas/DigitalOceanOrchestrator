@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs
+/src/.vs/DigitalOceanOrchestration
+/src/bin/Debug/net6.0
+/src/obj
