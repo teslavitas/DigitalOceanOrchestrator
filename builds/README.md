@@ -1,4 +1,5 @@
 Program automates creation and removal of Digital Ocen (DO) droplets with a given interval.
+
 Before using the tool try to create droplets manually as described here: https://dou.ua/forums/topic/36874/
 To start using the program do following: 
 1. Create an Access Token in DO by going to API - Tokens/Keys - Generate New Token
@@ -17,6 +18,6 @@ To start using the program do following:
 6. Run the program.
 
 Dropletes will be periodically recreated while program is running. It will log activities to console.
-The program uses the smallest available droplet size s-1vcpu-1gb and a 
-TODO: about docker image and instance size and a docker image: https://marketplace.digitalocean.com/apps/docker
+
+The program uses the smallest available droplet size s-1vcpu-1gb and a docker image: https://marketplace.digitalocean.com/apps/docker
 
