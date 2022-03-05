@@ -21,5 +21,5 @@ To start using the program do following:
 
 Dropletes will be periodically recreated while program is running. It will log activities to console.
 
-The program uses the smallest available droplet size s-1vcpu-1gb and a docker image: https://marketplace.digitalocean.com/apps/docker
+The program uses the smallest available droplet size s-1vcpu-1gb and a docker image: https://marketplace.digitalocean.com/apps/docker. Droplets are created on random basis in one of 5 regions: "ams3", "lon1", "fra1", "sgp1", "blr1".
 
