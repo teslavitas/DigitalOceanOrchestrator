@@ -1,2 +1,1 @@
-# DigitalOceanOrchestrator
-Automate creation and removal of Digital Ocean droplets
+Provides ability to delete and recreate Digital Ocen droplets with a given interval
