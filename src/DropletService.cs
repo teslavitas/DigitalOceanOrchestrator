@@ -51,12 +51,14 @@ internal class DropletService
         if (resistanceTag == null)
         {
             resistanceTag = await _client.Tags.Create(_tag);
+            LogHelper.Log($"created tag {_tag}");
         }
 
         var activatedTag = tags.FirstOrDefault(t => t.Name == TagActivated);
         if (activatedTag == null)
         {
             activatedTag = await _client.Tags.Create(TagActivated);
+            LogHelper.Log($"created tag {TagActivated}");
         }
     }
 
@@ -90,6 +92,7 @@ internal class DropletService
 
     private async Task ActivateDroplet(DigitalOcean.API.Models.Responses.Droplet droplet)
     {
+        LogHelper.Log($"start activating droplet {droplet.Id}");
         // connect by SSH and run commands
         await _sshService.RunCommands(droplet.Networks.V4.First(n => n.Type == "public").IpAddress);
 

@@ -9,6 +9,8 @@ var configuration = builder.Build();
 var settings = configuration.Get<Settings>();
 var sshService = new SshService(settings.SshPrivateKeyFilePath, settings.SshCommands);
 var dropletService = new DropletService(settings, sshService);
+
+LogHelper.Log($"start with tag {settings.Tag}");
 await dropletService.PrepareTags();
 
 while (true)
